@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
                 //TimePickerDialogが表示されたら時刻に応じてTextViewを変更
-                if (hourOfDay >= 18 && hourOfDay < 2){
+                if (hourOfDay >= 18 || hourOfDay < 2){
                     mTextView.setText("こんばんは");
                 } else if (hourOfDay >= 10 && hourOfDay < 18){
                     mTextView.setText("こんにちは");
